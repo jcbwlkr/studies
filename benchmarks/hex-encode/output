@@ -1,0 +1,25 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/jcbwlkr/studies/benchmarks/hex-encode
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       173 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       174 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       172 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       175 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       175 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       176 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       174 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       177 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       178 ns/op
+BenchmarkHexEncoding/fmt.Sprintf-8         	10000000	       176 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.0 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        70.0 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        70.2 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.8 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.9 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.6 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.6 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        68.6 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        69.6 ns/op
+BenchmarkHexEncoding/hex.EncodeToString-8  	20000000	        68.2 ns/op
+PASS
+ok  	github.com/jcbwlkr/studies/benchmarks/hex-encode	33.956s

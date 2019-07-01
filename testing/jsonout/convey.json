@@ -1,0 +1,24 @@
+{"Time":"2018-08-30T10:12:51.380324305-06:00","Action":"run","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey"}
+{"Time":"2018-08-30T10:12:51.380642073-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"=== RUN   TestConvey\n"}
+{"Time":"2018-08-30T10:12:51.380663393-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\n"}
+{"Time":"2018-08-30T10:12:51.380673891-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"  Some thing \n"}
+{"Time":"2018-08-30T10:12:51.380683788-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"    Should pass \u001b[32m✔\u001b[0m\n"}
+{"Time":"2018-08-30T10:12:51.38069618-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"    Should fail \u001b[33m✘\u001b[0m\n"}
+{"Time":"2018-08-30T10:12:51.380705511-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\n"}
+{"Time":"2018-08-30T10:12:51.380714216-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\u001b[31m\u001b[0m\u001b[33m\n"}
+{"Time":"2018-08-30T10:12:51.380723101-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"Failures:\n"}
+{"Time":"2018-08-30T10:12:51.380731757-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\n"}
+{"Time":"2018-08-30T10:12:51.380742577-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"  * /Users/jwalker/go/src/github.com/jcbwlkr/studies/testing/jsonout/convey_test.go \n"}
+{"Time":"2018-08-30T10:12:51.380751447-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"  Line 28:\n"}
+{"Time":"2018-08-30T10:12:51.380759993-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"  Expected: nil\n"}
+{"Time":"2018-08-30T10:12:51.380769308-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"  Actual:   'FAILURE'\n"}
+{"Time":"2018-08-30T10:12:51.380782684-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\n"}
+{"Time":"2018-08-30T10:12:51.380795553-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\u001b[0m\u001b[33m\n"}
+{"Time":"2018-08-30T10:12:51.380808409-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"2 total assertions\u001b[0m\n"}
+{"Time":"2018-08-30T10:12:51.380817582-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"\n"}
+{"Time":"2018-08-30T10:12:51.380837566-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Output":"--- FAIL: TestConvey (0.00s)\n"}
+{"Time":"2018-08-30T10:12:51.380847764-06:00","Action":"fail","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestConvey","Elapsed":0}
+{"Time":"2018-08-30T10:12:51.380868348-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"FAIL\n"}
+{"Time":"2018-08-30T10:12:51.381620155-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"exit status 1\n"}
+{"Time":"2018-08-30T10:12:51.381665503-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"FAIL\tgithub.com/jcbwlkr/studies/testing/jsonout\t0.007s\n"}
+{"Time":"2018-08-30T10:12:51.38167962-06:00","Action":"fail","Package":"github.com/jcbwlkr/studies/testing/jsonout","Elapsed":0.008}

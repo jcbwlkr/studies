@@ -1,0 +1,13 @@
+{"Time":"2018-08-30T10:12:43.820763086-06:00","Action":"run","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalSuccess"}
+{"Time":"2018-08-30T10:12:43.821076519-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalSuccess","Output":"=== RUN   TestNormalSuccess\n"}
+{"Time":"2018-08-30T10:12:43.821103532-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalSuccess","Output":"--- PASS: TestNormalSuccess (0.00s)\n"}
+{"Time":"2018-08-30T10:12:43.821115345-06:00","Action":"pass","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalSuccess","Elapsed":0}
+{"Time":"2018-08-30T10:12:43.821135523-06:00","Action":"run","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalFail"}
+{"Time":"2018-08-30T10:12:43.82114398-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalFail","Output":"=== RUN   TestNormalFail\n"}
+{"Time":"2018-08-30T10:12:43.821153973-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalFail","Output":"--- FAIL: TestNormalFail (0.00s)\n"}
+{"Time":"2018-08-30T10:12:43.821163014-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalFail","Output":"\tnormal_test.go:28: err should be nil, was FAILURE\n"}
+{"Time":"2018-08-30T10:12:43.821171545-06:00","Action":"fail","Package":"github.com/jcbwlkr/studies/testing/jsonout","Test":"TestNormalFail","Elapsed":0}
+{"Time":"2018-08-30T10:12:43.821180184-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"FAIL\n"}
+{"Time":"2018-08-30T10:12:43.82155809-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"exit status 1\n"}
+{"Time":"2018-08-30T10:12:43.821595821-06:00","Action":"output","Package":"github.com/jcbwlkr/studies/testing/jsonout","Output":"FAIL\tgithub.com/jcbwlkr/studies/testing/jsonout\t0.007s\n"}
+{"Time":"2018-08-30T10:12:43.821609626-06:00","Action":"fail","Package":"github.com/jcbwlkr/studies/testing/jsonout","Elapsed":0.007}

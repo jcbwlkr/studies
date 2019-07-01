@@ -1,0 +1,22 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/jcbwlkr/studies/benchmarks/string-equals
+BenchmarkStringEquals/big-same-8         	2000000000	         3.88 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.88 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.88 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.90 ns/op
+BenchmarkStringEquals/big-same-8         	1000000000	         3.89 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.90 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.87 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.89 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.89 ns/op
+BenchmarkStringEquals/big-same-8         	2000000000	         3.89 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.98 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.95 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.93 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         9.02 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.95 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.98 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.99 ns/op
+BenchmarkStringEquals/big-similar-8      	500000000	         8.98 ns/op
+BenchmarkStringEquals/big-similar-8      	

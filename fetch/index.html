@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fetch Test</title>
+  </head>
+  <body>
+<script>
+
+let body = {name: "Jacob"}
+fetch(
+  "http://localhost:8080",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    mode: "cors",
+    body: JSON.stringify(body)
+  }
+)
+.then(
+  x => console.log("Success", x.body),
+  x => console.log("Fail", x),
+)
+
+</script>
+  </body>
+</html>

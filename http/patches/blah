@@ -1,0 +1,83 @@
+package main
+
+import (
+	"encoding/json"
+	"log"
+	"testing"
+
+	"github.com/evanphx/json-patch"
+)
+
+// user is the type we're trying to patch
+type user struct {
+	Name  string `json:"name"`
+	Badge string `json:"badge"`
+	Age   int    `json:"age"`
+}
+
+func BenchmarkMergePatch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		u := user{Name: "Jane", Badge: "1000", Age: 42}
+		want := user{Name: "Jane", Badge: "2000", Age: 42}
+
+		patch := []byte(`{"badge": "2000"}`)
+
+		// Convert the existing doc to json
+		orig, err := json.Marshal(u)
+		if err != nil {
+			b.Fatal(err)
+		}
+
+		// Merge new json with the original doc
+		upd, err := jsonpatch.MergePatch(orig, patch)
+		if err != nil {
+			b.Fatal(err)
+		}
+
+		// Unmarshal the merged doc on top of our value
+		if err := json.Unmarshal(upd, &u); err != nil {
+			log.Fatal(err)
+		}
+
+		if u != want {
+			b.Error("didn't match")
+		}
+	}
+}
+
+// userUpdate is an intermdiate struct for patching manually
+type userUpdate struct {
+	Name  *string `json:"name,omitempty"`
+	Badge *string `json:"badge,omitempty"`
+	Age   *int    `json:"age,omitempty"`
+}
+
+func BenchmarkManual(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		u := user{Name: "Jane", Badge: "1000", Age: 42}
+		want := user{Name: "Jane", Badge: "2000", Age: 42}
+
+		patch := []byte(`{"badge": "2000"}`)
+
+		// Unmarshal the update onto a custom type with null fields
+		var upd userUpdate
+		if err := json.Unmarshal(patch, &upd); err != nil {
+			b.Fatal(err)
+		}
+
+		// Set the updated values if they were provided
+		if upd.Name != nil {
+			u.Name = *upd.Name
+		}
+		if upd.Badge != nil {
+			u.Badge = *upd.Badge
+		}
+		if upd.Age != nil {
+			u.Age = *upd.Age
+		}
+
+		if u != want {
+			b.Error("didn't match")
+		}
+	}
+}

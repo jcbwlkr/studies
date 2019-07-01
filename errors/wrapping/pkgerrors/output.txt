@@ -1,0 +1,28 @@
+Normal error message
+error: finding user 123: building query: app error code 99
+
+Error with details
+error: app error code 99
+building query
+main.query
+	/Users/jwalker/go/src/github.com/jcbwlkr/studies/errors/pkgerrors/main.go:47
+main.findUser
+	/Users/jwalker/go/src/github.com/jcbwlkr/studies/errors/pkgerrors/main.go:39
+main.main
+	/Users/jwalker/go/src/github.com/jcbwlkr/studies/errors/pkgerrors/main.go:13
+runtime.main
+	/usr/local/go/src/runtime/proc.go:200
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1337
+finding user 123
+main.findUser
+	/Users/jwalker/go/src/github.com/jcbwlkr/studies/errors/pkgerrors/main.go:40
+main.main
+	/Users/jwalker/go/src/github.com/jcbwlkr/studies/errors/pkgerrors/main.go:13
+runtime.main
+	/usr/local/go/src/runtime/proc.go:200
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1337
+
+That's an app error
+That's an app error and its state is: 99

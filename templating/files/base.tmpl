@@ -1,0 +1,15 @@
+{{ block "subject" . }}{{ end }}
+{{ block "text" . }}{{ end }}
+{{ block "html" . }}{{ end }}
+
+{{ define "html-base" -}}
+<!doctype html>
+<html>
+  <head>
+    <title>{{ template "subject" . }}</title>
+  </head>
+  <body>
+    {{ template "html" . }}
+  </body>
+</html>
+{{- end }}
