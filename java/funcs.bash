@@ -9,5 +9,5 @@ function build() {
 }
 
 function run() {
-  java -cp target/jsonClient-1.0-SNAPSHOT.jar com.jcbwlkr.studies.App
+  mvn exec:java -Dexec.mainClass=com.jcbwlkr.studies.App
 }

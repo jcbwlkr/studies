@@ -1,7 +1,7 @@
 package com.jcbwlkr.studies;
 
-import org.json.*;
-//import org.json.simple.JSONValue;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 
 import java.io.IOException;
 import java.net.URI;
@@ -23,14 +23,11 @@ public class App {
       System.out.printf("Status code: %d\n", response.statusCode());
 
       String body = response.body();
-
       System.out.printf("Raw body: %s\n", body);
 
-      JSONObject obj = new JSONObject(body);
-
-      //String deckID = (String) obj.get("deck_id");
-
-      System.out.printf("Deck ID: %s\n", obj);
+      JSONObject obj = (JSONObject) JSONValue.parse(body);
+      String deckID = (String) obj.get("deck_id");
+      System.out.printf("Deck ID: %s\n", deckID);
 
     } catch(Exception e) {
       System.out.println(e);
