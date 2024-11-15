@@ -1,0 +1,22 @@
+version: '3'
+services:
+    java:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        depends_on:
+          - db
+        volumes:
+          - .:/app
+        working_dir: /app
+        command:
+          - "bash"
+
+    db:
+        image: postgres:12.6-alpine
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres1
+            - POSTGRES_DB=library
+        ports:
+          - "5555:5432"

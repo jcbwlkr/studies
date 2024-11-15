@@ -20,7 +20,7 @@ public class App {
 
       HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
-      System.out.printf("Status code: %d\n", response.statusCode());
+      System.out.printf("Status code: %d\n\n", response.statusCode());
 
       String body = response.body();
       System.out.printf("Raw body: %s\n", body);
