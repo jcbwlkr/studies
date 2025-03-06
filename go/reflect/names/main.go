@@ -9,7 +9,7 @@ func main() {
 	username := "jcbwlkr"
 
 	v := reflect.ValueOf(&username)
-	newName := "anna"
+	newName := "jenn"
 	v.SetString(newName)
 
 	fmt.Println(username)

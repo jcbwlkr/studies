@@ -72,7 +72,7 @@ func mockUserServer() *httptest.Server {
 		}
 
 		users := map[string]string{
-			"1": `{"id": 1, "name": "Anna Walker", "email": "anna@example.com"}`,
+			"1": `{"id": 1, "name": "Jenn Walker", "email": "jenn@example.com"}`,
 			"2": `{"id": 2, "name": "Jacob Walker", "email": "jacob@example.com"}`,
 		}
 
@@ -101,7 +101,7 @@ func TestFetchUserTable(t *testing.T) {
 		Want      User
 		ShouldErr bool
 	}{
-		{"User 1", srv.URL + "/api/users/1", "secret", User{ID: 1, Name: "Anna Walker", Email: "anna@example.com"}, false},
+		{"User 1", srv.URL + "/api/users/1", "secret", User{ID: 1, Name: "Jenn Walker", Email: "jenn@example.com"}, false},
 		{"User 2", srv.URL + "/api/users/2", "secret", User{ID: 2, Name: "Jacob Walker", Email: "jacob@example.com"}, false},
 		{"User 3", srv.URL + "/api/users/3", "secret", User{}, true},
 		{"Bad path", srv.URL + "/api/projects", "secret", User{}, true},
@@ -151,7 +151,7 @@ func TestFetchUserSubs(t *testing.T) {
 	srv := mockUserServer()
 	defer srv.Close()
 
-	t.Run("User 1", test(srv.URL+"/api/users/1", "secret", User{ID: 1, Name: "Anna Walker", Email: "anna@example.com"}, false))
+	t.Run("User 1", test(srv.URL+"/api/users/1", "secret", User{ID: 1, Name: "Jenn Walker", Email: "jenn@example.com"}, false))
 	t.Run("User 2", test(srv.URL+"/api/users/2", "secret", User{ID: 2, Name: "Jacob Walker", Email: "jacob@example.com"}, false))
 	t.Run("User 3", test(srv.URL+"/api/users/3", "secret", User{}, true))
 	t.Run("Bad path", test(srv.URL+"/api/projects", "secret", User{}, true))
@@ -174,7 +174,7 @@ func TestFetchUserTableSubs(t *testing.T) {
 			Name:      "User 1",
 			URL:       srv.URL + "/api/users/1",
 			Token:     "secret",
-			Want:      User{ID: 1, Name: "Anna Walker", Email: "anna@example.com"},
+			Want:      User{ID: 1, Name: "Jenn Walker", Email: "jenn@example.com"},
 			ShouldErr: false,
 		},
 		{

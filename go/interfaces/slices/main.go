@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	names := []string{"Jacob", "Anna"}
+	names := []string{"Jacob", "Jenn"}
 
 	m := map[string]interface{}{
 		"n": names,

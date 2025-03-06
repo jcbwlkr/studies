@@ -1,0 +1,7 @@
+<p class="wysiwyg-text-align-justify">Our Scholarships team offers dedicated programs in partnership with industry leaders and other community organisations. Currently, we do not provide Scholarships directly on an individual enrollment basis.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">If you’d like to learn about ongoing and upcoming scholarship programs, kindly visit our <a href="https://www.udacity.com/scholarships"><span class="wysiwyg-underline" style="color: #1155cc;">Scholarships Webpage.</span></a> You can also sign up to get notified of future scholarship opportunities by filling out the information requested under the “notify me” section.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">We would also highly encourage you to seek out scholarship and grant opportunities in the area you live in. <span style="background-color: #f8f9f9;">Keep an eye on our social media presence and be sure you're getting our newsletters - we do provide promotional discount offers from time to time. </span></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><span style="background-color: #f8f9f9;">Additionally, you can </span>explore our range of free courses available <a href="https://www.udacity.com/courses/all"><span class="wysiwyg-underline" style="color: #1155cc;">here</span></a>. These courses can provide valuable learning opportunities as you await scholarship openings.</p>

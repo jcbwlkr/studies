@@ -6,7 +6,7 @@ func main() {
 
 	m := map[string]string{
 		"jcbwlkr": "Jacob Walker",
-		"anna":    "Anna Walker",
+		"jenn":    "Jenn Walker",
 	}
 
 	delete(m, "jcbwlkr")

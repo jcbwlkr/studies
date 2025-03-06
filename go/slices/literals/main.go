@@ -8,7 +8,7 @@ type user struct {
 
 func main() {
 	slice := []*user{
-		{"Anna"},
+		{"Jenn"},
 		{"Jacob"},
 	}
 

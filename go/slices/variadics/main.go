@@ -7,13 +7,17 @@ func main() {
 	fmt.Println("Separate args")
 	fn("a", "b", "c")
 
-	names := []string{"Anna", "Jacob", "Kell", "Carter", "Rory"}
+	names := []string{"Jenn", "Jacob", "Kell", "Krylex", "Carter", "Rory", "Olive", "Nixie"}
 
 	fmt.Println("Slice expansion")
 	fn(names...)
 
 	fmt.Println("Subslice expansion")
 	fn(names[0:3]...)
+
+	fmt.Println("Empty")
+	var empty []string
+	fn(empty...)
 }
 
 func fn(s ...string) {

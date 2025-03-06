@@ -12,7 +12,7 @@ const input = `[
 		"name": "Jacob"
 	},
 	{
-		"name": "Anna"
+		"name": "Jenn"
 	},
 	"just a string",
 	1234

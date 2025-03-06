@@ -7,7 +7,7 @@ var scores = make(map[string]int)
 func main() {
 
 	go player("Jacob")
-	go player("Anna")
+	go player("Jenn")
 	go player("Kell")
 
 	time.Sleep(5 * time.Second)

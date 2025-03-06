@@ -33,7 +33,7 @@ func main() {
 	c.Add(Customer{ID: 1, Name: "Jake"})
 	fmt.Println(c[0])
 
-	c.Add(Customer{ID: 2, Name: "Anna"})
+	c.Add(Customer{ID: 2, Name: "Jenn"})
 	c.Add(Customer{ID: 3, Name: "Kell"})
 	c.Add(Customer{ID: 4, Name: "Carter"})
 	c.Add(Customer{ID: 5, Name: "Rory"})

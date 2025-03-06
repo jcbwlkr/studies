@@ -6,11 +6,8 @@ func main() {
 
 	// Original map
 	m := map[string]string{
-		"jacob":  "Jacob Walker",
-		"anna":   "Anna Walker",
-		"kell":   "Kell Walker",
-		"carter": "Carter Walker",
-		"rory":   "Rory Walker",
+		"jacob": "Jacob Walker",
+		"jenn":  "Jenn Walker",
 	}
 	fmt.Println(m)
 
@@ -24,6 +21,6 @@ func main() {
 	for k, v := range m {
 		y[k] = v
 	}
-	delete(y, "anna")
+	delete(y, "jenn")
 	fmt.Println(m)
 }

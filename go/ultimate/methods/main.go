@@ -27,7 +27,7 @@ func main() {
 	// with field values.
 	ps := []player{
 		{name: "Jacob", atBats: 20, hits: 16},
-		{name: "Anna", atBats: 24, hits: 18},
+		{name: "Jenn", atBats: 24, hits: 18},
 		{name: "Kell", atBats: 14, hits: 6},
 		{name: "Carter", atBats: 12, hits: 6},
 	}

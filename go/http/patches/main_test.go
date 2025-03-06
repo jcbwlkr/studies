@@ -13,9 +13,9 @@ import (
 func TestPatch(t *testing.T) {
 
 	body := strings.NewReader(`{
-		"firstName": "Anna",
+		"firstName": "Jenn",
 		"lastName": "Walker",
-		"company": "Anna's Awesome Artichokes",
+		"company": "Jenn's Awesome Artichokes",
 		"title": null
 	}`)
 	r := httptest.NewRequest("PATCH", "/patch", body)
@@ -29,9 +29,9 @@ func TestPatch(t *testing.T) {
 
 	want := Contact{
 		ID:        seed.ID,
-		FirstName: "Anna",
+		FirstName: "Jenn",
 		LastName:  "Walker",
-		Company:   "Anna's Awesome Artichokes",
+		Company:   "Jenn's Awesome Artichokes",
 		Title:     "",
 		Roles:     []string{"Marketing", "Food Safety", "Executive"},
 	}
@@ -49,9 +49,9 @@ func TestPatch(t *testing.T) {
 func TestManual(t *testing.T) {
 
 	body := strings.NewReader(`{
-		"firstName": "Anna",
+		"firstName": "Jenn",
 		"lastName": "Walker",
-		"company": "Anna's Awesome Artichokes",
+		"company": "Jenn's Awesome Artichokes",
 		"title": null
 	}`)
 	r := httptest.NewRequest("PATCH", "/manual", body)
@@ -65,9 +65,9 @@ func TestManual(t *testing.T) {
 
 	want := Contact{
 		ID:        seed.ID,
-		FirstName: "Anna",
+		FirstName: "Jenn",
 		LastName:  "Walker",
-		Company:   "Anna's Awesome Artichokes",
+		Company:   "Jenn's Awesome Artichokes",
 		Title:     "",
 		Roles:     []string{"Marketing", "Food Safety", "Executive"},
 	}
@@ -89,9 +89,9 @@ func BenchmarkAPIManual(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		is := strconv.Itoa(i)
 		body := strings.NewReader(`{
-			"firstName": "Anna-` + is + `",
+			"firstName": "Jenn-` + is + `",
 			"lastName": "Walker-` + is + `",
-			"company": "Anna's Awesome Artichokes-` + is + `"
+			"company": "Jenn's Awesome Artichokes-` + is + `"
 		}`)
 		r := httptest.NewRequest("PATCH", "/manual", body)
 		w := httptest.NewRecorder()
@@ -111,9 +111,9 @@ func BenchmarkAPIPatch(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		id := strconv.Itoa(i)
 		body := strings.NewReader(`{
-			"firstName": "Anna-` + id + `",
+			"firstName": "Jenn-` + id + `",
 			"lastName": "Walker-` + id + `",
-			"company": "Anna's Awesome Artichokes-` + id + `"
+			"company": "Jenn's Awesome Artichokes-` + id + `"
 		}`)
 		r := httptest.NewRequest("PATCH", "/patch", body)
 		w := httptest.NewRecorder()
